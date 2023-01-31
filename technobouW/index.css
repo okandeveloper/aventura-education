@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    line-height: 1.5;
+    font-family: "Poppins",sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+.container {
+    display: block;
+    max-width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+    clear: both;
+}
+
+nav{
+    /* */
+  
+    background: #37384e;
+    width: 100%;
+
+}
+
+nav #menubtn{
+    display: none;
+}
+
+nav .menubtn{
+    font-size: 2rem;
+    color: white;
+    margin-right: 2rem;
+    display: none;
+
+}
+
+#logo{
+    display: block;
+    float: left;
+    margin: 50px 0 0 30px;
+}
+#logo img {
+    border-radius: 15px;
+}
+
+nav ul{
+    display: block;
+    float: left;
+    margin: 50px 0 0 30px;
+}
+
+nav ul > li{
+    display: inline-block;
+    list-style: none;
+    line-height: 46px;
+    margin: 0 .2rem;
+}
+
+nav ul > li a{
+    color: #f1faee;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
+nav ul > li a:hover{
+      /*hover ile fare üstüne geldiğinde yaptımız işlemler */
+      color: aqua;
+      
+}
+
+.gonderi-sol,.gonderi-sag{
+    display: block;
+    padding: 20px;
+    margin: 20px 0;
+    
+}
+
+.gonderi-sol img,.gonderi-sag img{
+    display: block;
+    width:40%;
+    border-radius: 25px;
+}
+
+.gonderi-sol img{
+    float: left;
+}
+.gonderi-sag img{
+    float: right;
+}
+
+
+
+footer{
+    background-color: #37384e;
+    color: white;
+    padding: 20px 0;
+
+}
+
+footer a {
+    color:#5a5b75;
+}
+
+footer .container {
+    max-width: 760px;
+    margin-bottom: 50px;
+}
+footer .container:last-child {
+    text-align: center;
+}
+
+.footer-col{
+    display: block;
+    float: left;
+    width: 32%;
+    padding: 0 15px;
+}
+
+.footer-col:nth-child(2) {
+    text-align: center;
+}
+.footer-col:nth-child(3) {
+    text-align: right;
+}
+
+.footer-col h2{
+   font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+
+}
+
+.footer-col h3{
+    font-size: 22px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    
+}
+
+.footer-col h4{
+    font-size: 24px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-weight: 500;
+    position: relative;
+    
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 44px;
+    width: 58px;
+    background-color: #5549f1;
+    color: #f1faee;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    line-height: 44px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    }
+
+    .footer-col .social-links a:hover{
+        color: wheat;
+        background-color: #1d3557;
+    }

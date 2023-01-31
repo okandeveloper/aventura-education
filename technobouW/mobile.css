@@ -1,0 +1,86 @@
+@media (max-width:1050px){
+    /*menunun responsive tasarımı
+      - flex yazınca yanyana dizilir
+      - flex-direction:colum yazınca alt alta dizilir */
+
+      nav .menubtn{
+        display: block;
+        float: right;
+        margin: 50px 20px 0 0;
+      }
+
+    nav ul{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        background: #37384e;
+        width: calc(100% - 40px);
+        margin: 20px;
+        animation: fade 0.2s;
+
+    } 
+    nav ul > li{
+        display: block;
+    }
+
+    nav ul > li a{
+        display: block;
+        font-size: 1.2rem;
+
+    }
+
+    nav #menubtn:checked ~ ul{
+        /* 
+        eğer id si menubtn olan checkbox chesked ise onun la aynı id ul seç demek
+         */
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    @keyframes fade {
+        0% {
+            height: 0;
+        }
+    
+        100% {
+            height: auto;
+        }
+    }
+
+ /*   nav #menubtn:checked ~ label.menubtn i::before{
+        content: "/700d";
+  
+    }
+ */
+ 
+
+}
+@media (max-width:768px){
+
+    .gonderi-sol img,.gonderi-sag img{
+        width:100%;
+        float: none;
+        display: block;
+    }
+
+    footer .footer-col {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center !important;
+    }
+
+}
+
+@media (max-width:359px){
+    nav .logo{
+        font-size: 1.5rem;
+
+    }
+
+    nav ul li a{
+        padding: 0;
+    }
+
+}
