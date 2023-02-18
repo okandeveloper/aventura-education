@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Companies</title>
+		<meta name="description" content="Sidebar Transitions: Transition effects for off-canvas views" />
+		<meta name="keywords" content="transition, off-canvas, navigation, effect, 3d, css3, smooth" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div id="st-container" class="st-container">
+			
+			<nav class="st-menu st-effect-9" id="menu-9">
+				<h2 class="icon icon-lab">Görevler</h2>
+				<ul>
+					<li onclick="filterData()"><a  class="" href="bir.html">Telefon numarası +33 ile başlayan şirketler</a></li>
+					<li id="showCompaniesButton"><a class="" href="iki.html">İngiltere’de ve Amerika’da faaliyet göstermeyen
+						kaç adet şirket var</a></li>
+					<li onclick="getCompanies()"><a class="" href="uc.html">Websitesi .com ile biten şirketler</a></li>
+					<li><a class="" href="dort.html">Telefon numarası +44 ile başlayan şirketler</a></li>
+					
+				</ul>
+			</nav>
+	
+
+			<!-- content push wrapper -->
+			<div class="st-pusher">
+				
+				
+
+				<div class="st-content"><!-- this is the wrapper for the content -->
+					<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+						<!-- Top Navigation -->
+						
+						<header class="codrops-header">
+							<h1>Companies</h1>
+						</header>
+						<div class="main clearfix">
+							<div id="st-trigger-effects" class="column">
+
+								<button data-effect="st-effect-9">Görevleri Görüntüle</button>
+								
+							</div>
+							<div class="column">
+								<p>Sizden bu verdiğim verileri kullanarak önceki görevinizdeki gibi bir arayüz içerisinde istediğim verileri getirmenizi istiyorum. Bu sefer istediklerimi ayrı ayrı sayfalar haline istiyorum. Navbar veya sidebar kullanarak bu sayfalar arasında geçiş sağlayabilirsiniz. Burda sayfa ve navbar gibi kullanıcağınız kısımların tasarımı tamamen size kalmış, ama aşağıda vereceğim örneğe göre de yapabilirsiniz tamamen opsiyonel.</p>
+								<p>Verdiğim verilerde 100 şirket var, ayrıca ülkelerin bayraklarını çekebilmeniz için ayrı bir countries verisi ayarladım. Veriler sahte olduğu için içerisindeki tutarsızlıklara aldanmayın: 
+									<br> <br>
+									İstediğim veriler şu şekilde;<br>
+								
+									1.Telefon numarası +33 ile başlayan şirketlerin tüm bilgilerini bir component haline getirip gösterin.<br>
+									
+									2.İngiltere’de ve Amerika’da faaliyet göstermeyen kaç adet şirket var. <br>
+									3.Websitesi .com ile biten şirketler.
+									4.Telefon numarası +44 ile başlayan şirketleri listeleyin ama şirketin resmini ve ülke bayrağını da gösterebileceğiniz bir component olsun.
+									
+									</p>
+							</div>
+	
+						</div><!-- /main -->
+					</div><!-- /st-content-inner -->
+				</div><!-- /st-content -->
+			</div><!-- /st-pusher -->
+		</div><!-- /st-container -->
+
+		<script src="js/classie.js"></script>
+		<script src="js/sidebarEffects.js"></script>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+#company-list {
+	margin: 20px 0;
+}
+.company-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
